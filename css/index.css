@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+:root {
+    /* ### Primary */
+    --Green: hsl(75, 94%, 57%);
+
+    /* ### Neutral */
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 20%);
+    --Dark__Grey: hsl(0, 0%, 12%);
+    --Off__Black: hsl(0, 0%, 8%);
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: .875rem;
+    background-color: var(--Off__Black);
+    margin: 0em 1rem;
+    text-align: center;
+}
+
+.card__profile {
+    background-color: var(--Dark__Grey);
+    width: 100%;
+    max-width: 385px;
+    padding: 2.85em;
+    border-radius: .5rem;
+}
+
+.profile__picture {
+    width: 88px;
+    border-radius: 100%;
+}
+
+.profile__name {
+    color: var(--White);
+    font-size: 1.5rem;
+    margin: 1em 0em 0.6rem 0em;
+}
+
+.profile__location {
+    display: block;
+    color: var(--Green);
+    font-weight: 700;
+}
+
+.profile__presentation {
+    color: var(--White);
+    margin: 1.8rem 0em 1.6rem 0em;
+}
+
+.profile__link {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.143em;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--White);
+    width: 100%;
+    height: 100%;
+    transition: .2s ease;
+    background-color: var(--Grey);
+    border-radius: .3rem;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn--link {
+    height: 45px;
+    width: 100%;
+}
+
+.link:hover {
+    background-color: var(--Green);
+    color: var(--Off__Black);
+    font-weight: 600;
+}
+
+.attribution {
+    position: absolute;
+    color: var(--White);
+    font-size: .8rem;
+    margin-top: 70em;
+    padding: 1rem;
+    line-height: 1.5rem;
+}
+
+.attribution > a {
+    color: var(--Green);
+}
+
+@media(max-width:420px) {
+    .card__profile {
+        padding: 1.44rem;;
+    }
+}
